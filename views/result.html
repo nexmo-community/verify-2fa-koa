@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>2FA with Nexmo on Koa.js</title>
+    <meta name="description" content="2FA implementation with Nexmo's Verify API on Node.js">
+    <link id="favicon" rel="icon" href="https://www.nexmo.com/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/client.js" defer></script>
+  </head>
+  
+  <body>
+    <header>
+      <h1><a href="/">2FA with Verify API</a></h1>
+      <div class="logo">
+        <img src="https://www.nexmo.com/static/images/hashed/7b7160e909a114d12f447ff8ef63680f.png" alt="Nexmo">
+      </div>
+    </header>
+    <main>
+      {% if status == 0 %}
+      <p>Code verified successfully. <span class="kaomoji">ヾ(＾ᴗ＾)ノ</span></p>
+      {% else %}
+      <p>Something went wrong… <span class="kaomoji">ಠ_ಠ</span></p>
+      <p>Please contact the administrator for more information.</p>
+      {% endif %}
+    </main>
+    <footer>
+      <p><small>Built with Nexmo's <a href="https://developer.nexmo.com/verify/overview">Verify API</a>.</small></p>
+    </footer>
+  </body>
+</html>

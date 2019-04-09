@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-size: calc(1vmin + 1em);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-width: 15em;
+  background-color: #f5f9fc;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background-color: #002744;
+  background-image: url('https://cdn.tipe.io/5a8360e812180100132b75a1/2349d578-4681-47a7-add4-8c00c84355a0/nexmo_hero_bg.svg');
+  text-align: center;
+  padding: 0.25em 0.5em;
+}
+
+h1 {
+  line-height: 1.1;
+}
+
+h1 a {
+  text-decoration: none;
+}
+
+.logo {
+  display: inline-block;
+  max-width: 8em;
+}
+
+main {
+  flex: 1;
+  margin: auto;
+  padding: 1em;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 20em;
+}
+
+form {
+  align-items: center;
+  width: 100%;
+  min-width: 8em;
+  text-align: center;
+}
+
+.register form {
+  margin-top: 1em;
+}
+
+input {
+  font-size: inherit;
+  padding: 0.5em;
+  border: 0;
+  margin-bottom: 1em;
+}
+
+.inline {
+  background-color: transparent;
+  text-decoration: underline;
+  color: initial;
+  padding: 0.5em 0;
+  cursor: pointer;
+}
+
+.inline:hover {
+  background-color: transparent;
+}
+
+@media screen and (min-width: 470px) {
+  form {
+    display: flex;
+  }
+
+  input {
+    flex: 1;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  header {
+    display:flex;
+    align-items: center;
+  }
+
+  .logo {
+    margin-left: auto;
+  }
+}
+
+button {
+  font-size: inherit;
+  height: 100%;
+  background-color: #ff8200;
+  transition: background-color 0.5s;
+  color: #fff;
+  padding: 0.5em 0.75em;
+  border: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  height: auto;
+}
+
+button:hover {
+  background-color: #148dcd;
+}
+
+pre {
+  background-color: #333;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  color: lightblue;
+  white-space: pre-wrap;
+  align-self: center;
+  margin-top: 1em;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25em;
+  color: white;
+  background-color: #002744;
+  font-size: 85%;
+}
+
+footer a {
+  color:#148dcd;
+}
+
+.kaomoji {
+  white-space: nowrap;
+}

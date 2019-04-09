@@ -1,0 +1,1 @@
+console.log('Add client-side Javascript as an enhancement ¯\\\_(ツ)_/¯')
